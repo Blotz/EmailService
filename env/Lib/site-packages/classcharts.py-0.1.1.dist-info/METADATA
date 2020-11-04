@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: classcharts.py
+Version: 0.1.1
+Summary: A python wrapper for the Classcharts API
+Home-page: https://github.com/NCPlayz/classcharts.py
+Author: NCPlayz
+Author-email: chowdhurynadir0@outlook.com
+License: MIT
+Project-URL: Issue tracker, https://github.com/NCPlayz/classcharts.py/issues
+Platform: UNKNOWN
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (>=3.6.2)
+Requires-Dist: beautifulsoup4 (>=4.8.2)
+Requires-Dist: lxml (>=4.5.0)
+
+# classcharts.py
+
+An unofficial API wrapper for the ClassCharts homework and student API.
+It is work-in-progress.
+
+## Examples
+
+Examples are using the asyncio REPL.
+
+```py
+>>> import asyncio
+>>> import datetime   
+>>> import classcharts
+>>> hc = classcharts.HomeworkClient("Your_School_Here")
+>>> await hc.request(datetime.datetime.now(), 7)
+[<Homework ...>, <Homework ...>]
+```
+
+```py
+>>> import asyncio
+>>> import datetime
+>>> import classcharts
+>>> sc = classcharts.StudentClient("MYC0D3", datetime.datetime(year=1970, month=1, day=1))
+>>> await sc.detentions()
+[<Detention ...>, <Detention ...>]
+```
+
+## Requirements
+
+- `aiohttp`
+- `beautifulsoup4`
+- `lxml`
+
+## Install
+
+```sh
+$ python -m pip install -U classcharts.py
+```
+
+

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html{
+    background-color: #111111;
+}
+body {
+    background-color: #222222;
+    max-width: 600px;
+    margin: 4% auto 0%;
+    
+    font-family: Calibri;
+    font-size: 15pt;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+#text{
+    padding-bottom: 5px;
+}
+
+h4, h5, h6{
+    display: inline;
+}
