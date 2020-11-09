@@ -67,9 +67,9 @@ else:
 
 functions|Purpose
 ---------|-------
-/|add user to db
+/ |add user to db
 Add Account|- veridy = 0
-\|send verify email
+\ |send verify email
 /|remove homework from homeowkr
 Remove Account|- remove account details
 
