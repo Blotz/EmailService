@@ -37,3 +37,44 @@ if hash = hash:
 else: 
 	return False
 ```
+
+
+## whiteboard notes
+
+### External flask server
+>> Email Verification?id=int 
+> Add HWs to database
+> Charges verification of email
+>> DeleteAccount?id=int
+> Removes HW from database
+> removes Account
+>> EmailVerified
+>> AccountDeleted
+
+### Users
+#### Me
+> triggers Add_user_code()
+>> add user to db
+>> send email
+>> store email code
+#### url/verify/code
+> checks cords and verified
+>> checks code
+>> verify
+>> add HW 
+
+### Python Program
+
+functions|Purpose
+---------|-------
+|/ add user to db
+Add Account|- veridy = 0
+|\ send verify email
+|/ remove homework from homeowkr
+Remove Account|\ remove account details
+
+
+|Bugs|
+|----|
+|- icloud blocks email|
+|- hw due same day breaks email format|
